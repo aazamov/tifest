@@ -1,0 +1,34 @@
+.langSelect {
+  background-color: black;
+  height: 40px;
+  display: flex;
+  color: #c7c7c7;
+  padding: 8px;
+  gap: 12px;
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 1s all ease-in-out;
+}
+
+.langSelect:hover {
+  transition: 1s all ease-in-out;
+  height: 124px;
+}
+
+.langSelect div {
+  display: flex;
+  flex-direction: column;
+}
+.langSelect div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.langSelect a {
+  color: #c7c7c7;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 38px;
+}
+
+.container span {
+  transition: 0.5s all ease-in-out;
+}
+
+.container:hover {
+  color: #ebad2d;
+}
+
+.container:hover .line {
+  width: 100%;
+}
+
+.container .line {
+  transition: 0.5s all ease-in-out;
+  width: 0;
+  background-color: #ebad2d;
+  height: 1px;
+  border-radius: 0 5px 5px 0;
+}

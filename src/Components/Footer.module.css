@@ -1,0 +1,117 @@
+.footer {
+  width: 100%;
+  margin: auto;
+  background-color: #181818;
+}
+.line_f {
+  background-image: url("../assets/Rectangle205.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.line_s {
+  background-image: url("../assets/Rectangle206.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.line_t {
+  background-image: url("../assets/Rectangle207.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.footer_box {
+  width: 1400px;
+  padding: 100px 0px;
+  margin: auto;
+}
+
+.footer_desc h2 {
+  color: #f2f2f2;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 40px;
+}
+.footer_desc h2:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ebad2d;
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+.footer_desc h2:hover:after {
+  width: 100%;
+}
+
+.footer_desc h2:hover {
+  color: #ebad2d;
+  transition: all 0.3s ease;
+}
+
+.info {
+  display: flex;
+  padding-top: 60px;
+  justify-content: space-between;
+}
+
+.info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f2f2f2;
+  padding-bottom: 24px;
+}
+
+.info p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #f2f2f2;
+  padding-bottom: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.info p:hover {
+  color: #ebad2d;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+  .footer_box {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer_desc h2 {
+    font-size: 24px;
+  }
+  .info h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .info p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .info h3 {
+    padding-top: 40px;
+  }
+}

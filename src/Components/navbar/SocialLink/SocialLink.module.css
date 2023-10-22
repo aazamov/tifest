@@ -1,0 +1,38 @@
+.socialLink {
+  position: relative;
+  color: #c7c7c7;
+  width: 35px;
+  height: 35px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.socialLink:hover {
+  color: #EBAD2D;
+}
+
+.socialLink:hover .svg .track {
+    stroke-dashoffset: 530;
+}
+
+.socialLink * {
+  position: absolute;
+  transition: 0.2s all ease-in-out;
+}
+
+.socialLink .svg {
+  transform: rotate(-90deg);
+  
+}
+
+.socialLink .svg .track {
+  stroke-width: 2;
+  stroke: #EBAD2D;
+  fill: none;
+  stroke-dasharray: 630;
+  stroke-dashoffset: 630;
+  transition: 0.5s all ease-in-out;
+}

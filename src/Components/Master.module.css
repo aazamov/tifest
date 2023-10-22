@@ -1,0 +1,97 @@
+.program {
+  width: 100%;
+  height: max-content;
+  background-color: #111;
+}
+.line_f {
+  background-image: url("../assets/Rectangle205.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.line_s {
+  background-image: url("../assets/Rectangle206.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.line_t {
+  background-image: url("../assets/Rectangle207.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.program_box {
+  padding: 90px 0px;
+  width: 1400px;
+  margin: auto;
+}
+
+.program_desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program_desc h2 {
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 40px;
+}
+.program_desc h2:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ebad2d;
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+.program_desc h2:hover:after {
+  width: 100%;
+}
+
+.program_desc h2:hover {
+  color: #ebad2d;
+  transition: all 0.3s ease;
+}
+
+.program_desc button {
+  width: 100px;
+  height: 48px;
+  padding: 1px 5px;
+  background-color: #454545;
+  border: 1px solid #ebad2d;
+  border-radius: 8px;
+}
+
+.item {
+  display: flex;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1550px) {
+  .program_box {
+    width: 100%;
+    padding: 90px 60px;
+  }
+  .program_desc {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .program_desc h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .program_desc {
+    display: block;
+  }
+  .program_desc button {
+    margin-top: 10px;
+  }
+}

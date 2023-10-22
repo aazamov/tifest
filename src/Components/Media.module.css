@@ -1,0 +1,141 @@
+.media {
+  width: 100%;
+  background-color: #1f1e1c;
+}
+.line_f {
+  background-image: url("../assets/Rectangle205.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.line_s {
+  background-image: url("../assets/Rectangle206.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.line_t {
+  background-image: url("../assets/Rectangle207.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.media_box {
+  width: 1400px;
+  margin: auto;
+  padding: 90px 0px;
+}
+
+.media_desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.media_desc h2 {
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 40px;
+}
+.media_desc h2:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ebad2d;
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+.media_desc h2:hover:after {
+  width: 100%;
+}
+
+.media_desc h2:hover {
+  color: #ebad2d;
+  transition: all 0.3s ease;
+}
+
+.media_desc select {
+  background-color: #181818;
+  color: #f2f2f2;
+  border-radius: 8px;
+  border: 1px solid #ababab;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ababab;
+  padding-bottom: 8px;
+}
+.images p {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.images span {
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* images  */
+
+.all_img {
+  display: flex;
+  gap: 24px;
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.grid_img {
+  display: grid;
+  gap: 8px;
+}
+
+.grid_img img {
+  width: 211px;
+  height: 128px;
+}
+
+.single_img {
+  width: 211px;
+  height: 264px;
+}
+@media screen and (max-width: 1550px) {
+  .media_box {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .images {
+    width: 100%;
+  }
+  .all_img {
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .media_desc h2 {
+    font-size: 24px;
+  }
+  .media_desc select {
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .media_desc {
+    display: block;
+  }
+}

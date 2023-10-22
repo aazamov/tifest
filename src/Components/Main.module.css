@@ -1,0 +1,63 @@
+.main_box {
+  width: 100%;
+  background-image: url("../assets/фон\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main_cont {
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aniv img {
+  width: 800px;
+  padding-top: 200px;
+}
+@media screen and (max-width: 1500px) {
+  .main_cont {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .statu img {
+    width: 450px;
+  }
+  .aniv img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main_cont {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    align-items: center;
+  }
+  .aniv img {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aniv img {
+    width: 350px;
+  }
+  .statu img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aniv img {
+    width: 250px;
+  }
+  .statu img {
+    width: 100px;
+  }
+}
